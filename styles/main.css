@@ -313,3 +313,30 @@ footer {
     }
 
 }
+
+.weather-dashboard #weather-app {
+    padding: 1rem;
+    background-color: #fff; /* Adjust if needed to fit your design */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.weather-dashboard #search-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.weather-dashboard #search-input {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.weather-dashboard #search-btn {
+    background-color: #444; /* Use color that matches your site's theme */
+    color: white;
+}
+
+.weather-dashboard #weather-display, 
+.weather-dashboard #recent-searches {
+    margin-top: 20px;
+}
