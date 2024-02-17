@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchButton = document.getElementById('search-btn');
     const searchInput = document.getElementById('search-input');
 
-    // Event listener for the search button click event
+    
     searchButton.addEventListener('click', function() {
         const cityName = searchInput.value.trim();
         if (cityName) {

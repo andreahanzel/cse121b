@@ -316,7 +316,7 @@ footer {
 
 .weather-dashboard #weather-app {
     padding: 1rem;
-    background-color: #fff; /* Adjust if needed to fit your design */
+    background-color: #fff; 
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -332,7 +332,7 @@ footer {
 }
 
 .weather-dashboard #search-btn {
-    background-color: #444; /* Use color that matches your site's theme */
+    background-color: #444; 
     color: white;
 }
 
