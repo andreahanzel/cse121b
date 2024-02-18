@@ -314,29 +314,82 @@ footer {
 
 }
 
+/* Weather App Main Container */
 .weather-dashboard #weather-app {
-    padding: 1rem;
-    background-color: #fff; 
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 3rem; /* Increased padding for more internal space */
+    background-color: #b9b7b7; /* Neutral background color for the app */
+    border-radius: 2px; /* Slight rounding of corners for a softer look */
+    box-shadow: 0 0 10px rgba(157, 158, 157, 0.493); /* Subtle shadow for depth */
+    margin: auto; /* Centers the app container within its parent */
+    max-width: 95%; /* Allows the app to be responsive while maintaining maximum width */
 }
 
+/* Search Section Styling */
 .weather-dashboard #search-section {
-    margin-bottom: 20px;
-    text-align: center;
+    margin-top: 0.5rem; /* Small top margin to space it from elements above */
+    text-align: center; /* Centers the search input and button */
 }
 
+/* Search Input Field Styling */
 .weather-dashboard #search-input {
-    margin-right: 10px;
-    font-size: 16px;
+    margin-right: 10px; /* Right margin to separate it from the search button */
+    font-size: 18px; /* Larger font size for easy readability */
 }
 
+/* Search Button Styling */
 .weather-dashboard #search-btn {
-    background-color: #444; 
-    color: white;
+    background-color: #444; /* Dark background for contrast */
+    color: white; /* White text for readability */
+    padding: 5px 20px; /* Padding for a larger clickable area */
+    cursor: pointer; /* Changes cursor to indicate it's clickable */
+    font-size: larger; /* Increases font size for visibility */
+    margin-top: 20px; /* Top margin to space it from the search input */
 }
 
+/* Weather Display and Recent Searches Section Styling */
 .weather-dashboard #weather-display, 
 .weather-dashboard #recent-searches {
-    margin-top: 20px;
+    margin-top: 20px; /* Adds space above these sections for clarity */
 }
+
+/* Overall Weather Dashboard Styling */
+.weather-dashboard {
+    max-width: 95%; /* Sets a maximum width to ensure content is well-contained */
+    margin: auto; /* Centers the dashboard horizontally */
+    padding: 1rem; /* Adds padding around the entire dashboard for spacing */
+}
+
+/* Header Styling */
+.weather-dashboard h1 {
+    margin-top: 1rem; /* Top margin to space the header from any content above */
+    font-size: 30px; /* Increases the font size for prominence */
+    margin-bottom: 1rem; /* Bottom margin to space the header from content below */
+    padding: 1rem 0; /* Top and bottom padding for additional space around the text */
+}
+
+/* Recent Search Buttons Styling */
+.recent-search {
+    margin: 5px; /* Margin around buttons to prevent them from touching */
+    padding: 5px 20px; /* Padding inside buttons for a larger clickable area */
+    background-color: #f0f0f0; /* Light background color for contrast */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounds the corners for a softer appearance */
+    cursor: pointer; /* Indicates the button is clickable */
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #d9534f; /* Bright red color for visibility and to indicate an error */
+    font-weight: bold; /* Bold text for emphasis */
+    margin-top: 20px; /* Top margin to separate it from content above */
+    text-align: center; /* Centers the text */
+}
+
+/* Responsive Design Adjustments */
+@media only screen and (min-width: 32.5em) {
+    .weather-dashboard {
+        max-width: 80%; /* Reduces the maximum width for larger screens to avoid overly wide layout */
+    }
+}
+
+

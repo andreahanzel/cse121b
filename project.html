@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags for responsive design and character encoding -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Title of the web application -->
   <title>Personal Weather Dashboard | CSE 121b Project</title>
+  
+  <!-- Google Fonts for Roboto font and preconnect for faster font loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Link to the main stylesheet -->
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+  <!-- Navigation bar -->
   <nav>
     <ul id="menu">
+      <!-- Menu toggle for responsive design -->
       <li><a id="toggleMenu">&equiv;</a></li>
+      
+      <!-- Navigation links -->
       <li><a href="index.html">Home</a></li>
       <li><a href="w01-task.html">W1 Task</a></li>
       <li><a href="w03-task.html">W3 Task</a></li>
@@ -21,22 +32,39 @@
       <li><a href="project.html" class="active">Project</a></li>
     </ul>
   </nav>
+  
+  <!-- Main content area -->
   <main id="home" class="weather-dashboard">
     <section>
-        <h1>Personal Weather Dashboard</h1>
-        <div id="weather-app">
-            <div id="search-section">
-                <input type="text" id="search-input" placeholder="Enter city name...">
-                <button id="search-btn">Search</button>
-            </div>
-            <div id="weather-display"></div>
-            <div id="recent-searches"></div>
+      <!-- Heading displaying the name of the dashboard -->
+      <h1>Personal Weather Dashboard</h1>
+      
+      <!-- Weather app container -->
+      <div id="weather-app">
+        <!-- Search section for entering city names -->
+        <div id="search-section">
+          <input type="text" id="search-input" placeholder="Enter city name...">
+          <button id="search-btn">Search</button>
         </div>
+        
+        <!-- Placeholder for displaying error messages -->
+        <div id="error-message" class="error-message"></div>
+        
+        <!-- Container for displaying fetched weather information -->
+        <div id="weather-display"></div>
+        
+        <!-- Container for displaying recent searches -->
+        <div id="recent-searches"></div>
+      </div>
     </section>
   </main>
+  
+  <!-- Footer with copyright information -->
   <footer>
     &copy;<span id="year"></span> | Personal Weather Dashboard | CSE 121b
   </footer>
+  
+  <!-- JavaScript files for functionality -->
   <script src="scripts/main.js"></script>
   <script src="scripts/weather-app.js"></script>
 </body>
